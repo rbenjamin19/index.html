@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  </head>
+  <body background="https://image.freepik.com/free-vector/white-cubes-pattern_1053-248.jpg">
+    <container>
+      <row>
+        <div class="col-lg-12">
+          <h2>Crystals Collector</h2>
+        </div>
+        <div class="col-lg-7">
+          <h5> You'll be given a desired number at the start of the game</h5>
+        </div>
+        <div class="col-lg-7">
+          <h5> There are four crystals below. Clicking each crystal will add a specific amount of points to your score.</h5>
+          </div>
+          <div class="col-lg-7">
+          <h5>If you match your score to the desired score you win. If your score is greater than the desired score you lose.</h5>
+          </div>
+          <div class="col-lg-7">
+          <h5>The values of each crystal will change every round.</h5>
+          </div>
+          <div class="col-lg-7">
+          <h5>The value of each crystal will stay consistent throughout each round and each crystals value will be hidden.</h5>
+          </div>
+     </row> 
+        
+    <!-- referenced to in html insert -->
+      <row>
+        <div class="col-lg-12">
+          <h4 id="score">Desired score:</h4>
+        </div>
+        <div id ="desiredScore" class="col-lg-12">
+          <h1>0</h1>
+        </div>
+        <div id="game" class="col-lg-12">
+          <p>Wins: 0</p>
+          <p>Losses: 0</p>  
+        </div>
+          <div id="imageHolder" class="col-lg-12">
+            <img id="img1" src="https://pbs.twimg.com/profile_images/3570193294/5ed18569e4657d13d252a1c825cbb69c.jpeg" >
+            <img id="img2" src="http://worldartsme.com/images/red-crystal-clipart-1.jpg" >
+            <img id="img3" src="http://www.bluemaize.net/im/girls-jewelry/green-crystals-2.jpg" >
+            <img id="img4" src="https://images-na.ssl-images-amazon.com/images/I/617MIMJ%2BXoL._SY355_.jpg" >
+          </div>
+          <div class="col-lg-12">
+            <h4>Your score:</h4>
+        </div>
+        <div id ="totalScore" class="col-lg-12">
+          <h1>0</h1>
+        </div>
+      </div>
+      </row>
+  </container>
+    <script src="assets/game.js"></script>
+  </body>
+</html>
